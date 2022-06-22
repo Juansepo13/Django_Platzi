@@ -7,5 +7,5 @@ from premiosplatzi.premiosplatziapp.polls.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("polls/", include("polls.url"))
+    path("polls/", include("polls.urls"))
 ]
