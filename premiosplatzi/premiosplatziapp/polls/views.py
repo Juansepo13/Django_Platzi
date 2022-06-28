@@ -31,7 +31,7 @@ def vote(request, question_id):
         return render(request, "polls/detail.html", { 
             "question": question,
             "error_message": "No elegiste una respuesta"
-            })
+        })
     else:
         selected_choice.votes += 1
         selected_choice.save()
